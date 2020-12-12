@@ -1,0 +1,69 @@
+<!doctype html>
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            body{
+                background: #ccc;
+            }
+            div{
+                border: 3px solid red;
+                padding: 25px;
+                position: relative;
+                margin: 25px;
+            }
+            div:before{
+                content: "texto before";
+                background: #ccc;
+            }
+            
+            div:after{
+                content: "";
+                background: red;
+                width: 25px;
+                height: 25px;
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            
+        </style>
+        
+        
+        
+    </head>
+    <body>
+        <div> texto principal da div</div>
+        <article>
+            <h3>
+                Titulo
+            </h3>
+            <p> paragrafo <a href="#">Apenas um link</a> </p>
+            <p> paragrafo <a href="#">Apenas um link</a> </p>
+            <p> paragrafo <a href="#">Apenas um link</a> </p>
+        
+        </article>
+        
+        <ul>
+            <li><a href="#">Link falso</a> </li>
+            <li><a href="#">Link falso</a> </li>
+            <li><a href="http://serfrontend.com" target="_blank">Link externo</a> </li>
+            <li><a href="http://serfrontend.com/qq.pdf" target="_blank">Link externo</a> </li>
+            <li><a href="0.9.html" title="veja exercicio anterior">Link interno</a> </li>
+            
+        </ul>
+        
+        
+        
+        
+        
+    </body>
+</html>    

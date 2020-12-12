@@ -1,0 +1,150 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        <style>
+            body{
+                font-family: arial,sans-serif;
+                font-size: 15px;
+            }
+            .formlogin{
+                width: 250px;
+                margin: 50px auto;
+            }
+            
+            .formlogin fieldset{
+                background: #ccc;
+            }
+            .formlogin legend{
+                display: inline-block;
+                background: black;
+                color: white;
+            }
+            .L{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                margin: 5px auto;
+                border: none;
+            }
+
+        </style>
+        
+    </head>
+    
+    <body>
+        <h1>Exemplo de formulario</h1>
+        
+        <form action="#" method="post" class="formlogin" >
+            <fieldset>
+                
+                <legend>Dados pessoais:</legend>
+                
+                
+                <label class="L">Email:</label>
+                <input type="email" required placeholder="Digite um email valido" >
+                
+                
+                
+                <br>
+                
+                
+                <label class="L">Numero de filhos:</label>
+                <input type="number" min="0" max="1000">
+                
+                
+                <br>
+                
+                
+                <label class="L">Data de nascimento:</label>
+                <input type="date" min="1900-01-01" max="2022-12-30">
+                
+                <br>
+                
+                
+                <label class="L">Sexo:</label>
+                <label class="L">
+                    Masculino
+                    <input type="radio" 
+                    name="sexo" value="M">
+                </label>    
+                
+                
+                <label class="L">
+                    Feminino
+                    <input type="radio" 
+                    name="sexo" value="F">
+                </label>
+                <br>
+                
+                <input type="hidden" name="expira" value="2020-12-30">
+                
+                
+                <label>Estado:</label>
+                <select name="estado" >
+                    <option value="0">Selecione</option>
+                    <option value="SP">São paulo</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="MG">Minas gerais</option>
+                
+                </select>
+                <br>
+                <select multiple size="2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                
+                </select>
+                
+             </fieldset>
+            
+            <fieldset>
+                <legend>Área de interesse</legend>
+                
+                <label><input type="checkbox" name="HTML" value="HTML">HTML</label>
+                <br>
+                <label><input type="checkbox" name="CSS" value="CSS">CSS</label>
+                <br>
+                <label><input type="checkbox" name="Javascript" value="JAVASCRIPT">Javascript</label>
+            
+            
+            </fieldset>
+            
+            <fieldset>
+                <legend>Mensagem</legend>
+                <textarea style="resize: none" name="msg" cols="30" rows="10" maxlength="50" placeholder="maximo">
+                </textarea>
+                
+                <textarea style="resize: none" name="Contrato" cols="30" rows="10" readonly>Texto do contrato
+                </textarea>
+                <br>
+                <label>
+                    <input type="checkbox" checked>Li e aceito
+                </label>
+                <br>
+                <label>Anexe o arquivo:
+                <input type="file">
+                </label>
+                <br>
+                <input type="range" min="0" max="10" step="2">
+                <br>
+                <input type="time">
+                <br>
+                <input type="color">
+            
+            </fieldset>
+            
+            <br>
+                <input type="submit" value="submit">
+                <input type="button" value="button">
+                <input type="reset" value="reset">
+        
+        </form>
+    </body>
